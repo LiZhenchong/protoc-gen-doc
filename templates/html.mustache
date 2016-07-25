@@ -4,7 +4,7 @@
   <head>
     <title>Protocol Documentation</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.useso.com/css?family=Ubuntu:400,700,400italic"/>
     <style>
       body {
         width: 60em;
@@ -225,14 +225,13 @@
     {{#p}}{{message_description}}{{/p}}
     <table class="field-table">
       <thead>
-        <tr><td>Field</td><td>Type</td><td>Label</td><td>Description</td></tr>
+        <tr><td>Field</td><td>Type</td><td>Description</td></tr>
       </thead>
       <tbody>
         {{#message_fields}}
         <tr>
           <td>{{field_name}}</td>
           <td><a href="#{{field_full_type}}">{{field_long_type}}</a></td>
-          <td>{{field_label}}</td>
           <td>{{#p}}{{field_description}}{{#field_default_value}} Default: {{field_default_value}}{{/field_default_value}}{{/p}}</td>
         </tr>
         {{/message_fields}}
