@@ -101,3 +101,9 @@ Look in [examples/Makefile](examples/Makefile) to see how these outputs were bui
 [appveyor-ci]:
     https://ci.appveyor.com/project/estan/protoc-gen-doc
     "protoc-gen-doc at Appveyor CI"
+    
+## Special Change for Litscope
+
+    * 因为国内特殊原因, 更改html模板中引用的`fonts.googleapis.com`为`fonts.useso.com`
+    
+    * 去掉原库中html跟markdown中的`Label`一栏, 因为在`proto3`中已经没有`required`选项了
